@@ -1,0 +1,13 @@
+@font-face {
+    font-family: flower;
+    src: url(/fonts/IndieFlower-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-level1 {
+    
+}
