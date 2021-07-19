@@ -1,13 +1,76 @@
 @font-face {
-    font-family: flower;
-    src: url(/fonts/IndieFlower-Regular.ttf);
+    font-family: varela;
+    src: url(/fonts/VarelaRound-Regular.ttf);
 }
+
+@font-face {
+    font-family: itim;
+    src: url(/fonts/Itim-Regular.ttf);
+}
+
+:root {
+    --background-base: var(var(--font-color));
+    --background-radiant:  
+        radial-gradient(at 9% 78%, hsla(131,69%,74%,1) 0, transparent 55%),  
+        radial-gradient(at 57% 89%, hsla(142,44%,73%,1) 0, transparent 44%),  
+        radial-gradient(at 80% 0%, hsla(190,100%,56%,1) 0, transparent 50%),  
+        radial-gradient(at 82% 49%, hsla(195,95%,70%,1) 0, transparent 50%),  
+        radial-gradient(at 0% 100%, hsla(223,76%,38%,1) 0, transparent 50%),  
+        radial-gradient(at 80% 100%, hsla(196,44%,65%,1) 0, transparent 50%),  
+        radial-gradient(at 16% 12%, hsla(228,89%,58%,1) 0, transparent 50%);
+    --background: #136771 ;
+    --font-color: #eee;
+}
+
 
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh; 
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
 }
 
 .title-level1 {
+    font-family: varela;
+    font-size: 2.5rem;
+}
+
+.p {
+    font-family: itim;
+    font-size: 1.3rem;
+    color: var(--background);
+}
+
+.header {
+    background-color: var(--background);
+    background-image: var(--background-radiant);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-image {
+    width: 300px;
+    border-radius: 50%;
     
+}
+
+.main {
+   
+}
+
+.footer {
+    text-align: center;
+   
+}
+
+.footer > .p {
+    color: var(--font-color);
 }
