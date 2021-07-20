@@ -25,14 +25,12 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
     min-height: 100vh; 
     width: 100%;
     background: var(--font-color);
 }
 
-body * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,6 +73,10 @@ body * {
     text-align: center;
 }
 
+.header > * {
+    margin: 4rem;
+}
+
 .span {
     color: var(--color-span);
     text-shadow: 1px 1px 5px gray;
@@ -83,11 +85,11 @@ body * {
 .header-image {
     width: 300px;
     border-radius: 50%;
-    margin: 4rem;
 }
 
 .main-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 96%;
     margin: 1.2rem auto;
@@ -136,16 +138,92 @@ body * {
     background: var(--title-color);
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    display: flex;
+    width: 80%;
+    height: 2rem;
+}
+
+.color-avance {
+    background: var(--color-span);
+}
+
+.ml {
+    margin-left: 1rem;
+}
+
+.mr {
+    margin-right: 1rem;
+}
+
+.p-10 {
+    width: 10%;
+}
+
+.p-20 {
+    width: 20%;
+}
+
+.p-30 {
+    width: 30%;
+}
+
+.p-40 {
+    width: 40%;
+}
+
+.p-50 {
+    width: 50%;
+}
+
+.p-60 {
+    width: 60%;
+}
+
+.p-70 {
+    width: 70%;
+}
+
+.p-80 {
+    width: 80%;
+}
+
+.p-90 {
+    width: 90%;
+}
+
+.p-100 {
+    width: 100%;
+}
+
 @media screen and (max-width: 960px){
-    /* .header {
-        flex-direction: column;
-    } */
+    .header-image {
+        width: 200px;   
+    }
+
+    .header > * {
+        margin: 1rem;
+    }
+ 
+}
+
+@media screen and (max-width: 860px){
 
     .title-level1 {
         font-size: 2rem;
     }
 
-    .header-image {
-        width: 200px;
+    .main-container > * {
+        width: 90%;
     }
 }
