@@ -100,9 +100,6 @@ body {
     font-size: 2.2rem;
     color: var(--title-color);
 }
-.footer {
-    text-align: center;  
-}
 
 .list {
     font-size: 1.3rem;
@@ -134,7 +131,8 @@ body {
 }
 
 .footer {
-    height: 8rem;
+    text-align: center; 
+    height: 10rem;
     background: var(--title-color);
 }
 
@@ -143,18 +141,18 @@ body {
 }
 
 .contenedor-habilidades {
+    width: 95%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
-.progress {
-    display: flex;
-    width: 90%;
-    height: 2rem;
+.font-progress {
+    background: lightgray;
+    width: 100%;
 }
 
-.color-avance {
+.color-progress {
     background: var(--color-span);
 }
 
@@ -204,6 +202,10 @@ body {
 
 .p-100 {
     width: 100%;
+}
+
+.icon-link {
+    width: 4rem;
 }
 
 @media screen and (max-width: 960px){
