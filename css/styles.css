@@ -34,7 +34,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--font-color);
 }
 
 .title {
@@ -58,23 +57,20 @@ body {
 }
 .p {
     font-family: itim;
-    font-size: 1.3rem;
-    
+    font-size: 1.3rem;   
 }
 
 .header {
     background-color: var(--background);
     background-image: var(--background-radiant);
+    color: var(--font-color);
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-}
-
-.header > * {
-    margin: 4rem;
+    padding: 2rem;
 }
 
 .span {
@@ -134,6 +130,7 @@ body {
     text-align: center; 
     height: 10rem;
     background: var(--title-color);
+    color: var(--font-color);
 }
 
 .reverse {
@@ -211,10 +208,6 @@ body {
 @media screen and (max-width: 960px){
     .header-image {
         width: 200px;   
-    }
-
-    .header > * {
-        margin: 1rem;
     }
  
 }
