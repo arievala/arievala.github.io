@@ -212,6 +212,18 @@ body {
     width: 4rem;
 }
 
+.o-3 {
+    order: 3;
+}
+
+.o-2 {
+    order: 2;
+}
+
+.o-1 {
+    order: 1;
+}
+
 @media screen and (max-width: 960px){
     
 
@@ -227,6 +239,10 @@ body {
     .font-progress {
       width: 85%;
     }   
+
+    .container-children {
+        order: 0;
+    }
  
 }
 
