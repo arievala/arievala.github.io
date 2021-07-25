@@ -213,9 +213,7 @@ body {
 }
 
 @media screen and (max-width: 960px){
-    .header-image {
-        width: 200px;   
-    }
+    
 
     .container-children {
         width: 98%;
