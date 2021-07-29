@@ -296,7 +296,30 @@ body {
 }
 
 @media screen and (max-width: 740px){
+
+    .header-image {
+        width: 240px;
+    }
+
     .boton {
         width: 50%;
+    }
+}
+
+@media screen and (max-width:440px){
+    .contenedor-habilidades {
+        flex-direction: column;
+    }
+
+    .contenedor-habilidades .p {
+        width: 100%;
+    }
+
+    .font-progress {
+        width: 100%;
+    }
+
+    .color-progress .p {
+        text-align: center;
     }
 }
